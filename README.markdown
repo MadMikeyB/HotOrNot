@@ -8,7 +8,7 @@ Installation instructions:
 
 2] Edit ```/app/Config/core.php``` and edit the Security values.
 
-3] Upload ```/app/Config/Database/schema.sql``` to your database server and import it.
+3] Upload ```/app/schema.sql``` to your database server and import it.
 
 4] Upload all the files to your server.
 
@@ -24,6 +24,8 @@ The "Wrapper" file is in ```/app/View/Layouts/default.ctp``` - you should only n
 ## CakePHP 2.0 RC2 ##
 
 This application is using a RELEASE CANDIDATE version of CakePHP and should be considered BETA software at best. I make no assurances or guarantees that this will work on your set-up.
+
+Note: The /Config directory hasn't been included (Git is being a git on my PC and won't commit it) so you'll need to download the contents of that from CakePHP.org
 
 # License #
 
