@@ -25,19 +25,6 @@ class ItemsController extends AppController {
         $this->set('votecountone', $this->Vote->find('count', array('conditions' => array('Vote.item_id' => $randItem['0']['Item']['id']))));
         $this->set('votecounttwo', $this->Vote->find('count', array('conditions' => array('Vote.item_id' => $randItem['1']['Item']['id']))));
         //debug($randItem);
-        
-        $top = $this->Vote->query("SELECT v.item_id, COUNT( item_id ) AS count
-FROM votes AS v
-GROUP BY v.item_id
-ORDER BY count DESC 
-LIMIT 5");
-        $top_contenders = array();
-        
-        foreach ($top as $t) {
-          $top_contenders[] = $this->Item->findById($t['v']['item_id']);  
-        }
-        
-        $this->set('top', $top_contenders);
     }
     
     public function add() {
