@@ -23,6 +23,9 @@
 /**
  *  Get Cake's root directory
  */
+ 
+ // Just a test comment, don't mind me - Alan
+ 
 	define('APP_DIR', 'app');
 	define('DS', DIRECTORY_SEPARATOR);
 	define('ROOT', dirname(__FILE__));
